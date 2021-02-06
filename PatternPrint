@@ -1,0 +1,31 @@
+import java.util.*;
+public class PatternPrint{
+
+    public static void main(String []args){
+         
+for (int i=0; i < 5; i++){
+    for (int j=0; j<5 ; j++){
+        if (j >= i)
+            System.out.print(5-i);
+        else
+           System.out.print(5-j);
+    }
+    System.out.println("");
+  }
+
+        //We can also make 5 as n and take input from user
+        //Method 2
+        Scanner sc= new Scanner(System.in);
+        int n=sc.nextInt();
+
+        for (int i=0; i < n; i++){
+            for (int j=0; j<n ; j++){
+                if (j >= i)
+                    System.out.print(n-i);
+                else
+                    System.out.print(n-j);
+            }
+            System.out.println("");
+        }
+    }
+}
